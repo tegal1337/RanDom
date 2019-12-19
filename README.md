@@ -4,6 +4,7 @@
 <br>
 ./random adalah sebuah tool sederhana yang ditulis menggunakan PHP, yang berfungsi untuk membuat sebuah user secara acak yang mengambil api dari https://randomuser.me/ dan https://uinames.com/
 <br>
+
 ### Instalation :
 
 $ git clone https://github.com/tegal1337/RanDom <br>
