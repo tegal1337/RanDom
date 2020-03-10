@@ -1,8 +1,8 @@
 
-## ./random | Simple User Generator with PHP
+## ./random | Simple Generator with PHP
 
 <br>
-./random adalah sebuah tool sederhana yang ditulis menggunakan PHP, yang berfungsi untuk membuat sebuah user secara acak yang mengambil api dari https://randomuser.me/ dan https://uinames.com/
+./random adalah sebuah tool sederhana yang ditulis menggunakan PHP, yang berfungsi untuk membuat sebuah user ataupun data yang lain secara acak yang mengambil dari beberapa penyedia API
 <br>
 
 ### Instalation :
@@ -27,10 +27,11 @@ php5+ / php-curl
  /_/ | '_/ _` | ' \)) _` / _ \ '  \() 
 (_)  |_| \__,_|_||_|\__,_\___/_|_|_|  
 ---------------------------Tegal1337
---------Random User Generator-------
+-----------Random Generator--------
 [+] Usage :
 $ --random / random (https://randomuser.me/)
 $ --uiname / uiname (https://uinames.com/)
+$ --lorsum / lorsum (https://loripsum.net/)
 $ --touch / touch (For contact me)
 
 </pre>
