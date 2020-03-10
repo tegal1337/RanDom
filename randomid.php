@@ -11,10 +11,11 @@ function banner(){
  /_/ | '_/ _` | ' \)) _` / _ \ '  \() 
 (_)  |_| \__,_|_||_|\__,_\___/_|_|_|  
 ---------------------------Tegal1337
---------Random User Generator-------
+-----------Random Generator--------
 [+] Usage :
 $ --random / random (https://randomuser.me/)
 $ --uiname / uiname (https://uinames.com/)
+$ --lorsum / lorsum (https://loripsum.net/)
 $ --touch / touch (For contact me)
 
 ";
@@ -74,6 +75,32 @@ function uinames(){
     print "CC : $ccnum $ccexp $cccvv\n";
     print "\n";
 }
+function lorsum(){
+    echo "
+    List of command :
+
+(integer) - The number of paragraphs to generate.
+short, medium, long, verylong - The average length of a paragraph.
+decorate - Add bold, italic and marked text.
+link - Add links.
+ul - Add unordered lists.
+ol - Add numbered lists.
+dl - Add description lists.
+bq - Add blockquotes.
+code - Add code samples.
+headers - Add headers.
+allcaps - Use ALL CAPS.
+prude - Prude version.
+plaintext - Return plain text, no HTML.
+	
+use '/'' to be specific
+example : 20/allcaps
+    \n";
+    $tulis = readline("~Find : ");
+	$url = 'https://loripsum.net/api/'.$tulis;
+	$result = file_get_contents($url);
+	echo $result;
+}
 
 function contact(){
 	echo "Hello .... My name is dalpan \n";
@@ -93,7 +120,10 @@ while (true) {
 		banner();
 	}elseif (strstr("--touch", $command) or strtr("touch", $command)) {
 		contact();
-	}else {
+    }elseif (strstr("--lorsum", $command) or strtr("lorsum", $command)){
+        lorsum();
+    }
+    else {
 		echo "Nulis opo lurr ?";
 	}
 }
